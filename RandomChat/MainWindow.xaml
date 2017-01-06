@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TextBox x:Name="ChatBox" HorizontalAlignment="Left" Height="23" Margin="10,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432" KeyDown="OnKeyDownHandler"/>
+        <Button x:Name="SendButton" Content="Send" HorizontalAlignment="Left" Margin="442,286,0,0" VerticalAlignment="Top" Width="65" Height="23" Click="SendButtonClick"/>
+        <TextBlock x:Name="TextBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Text}" VerticalAlignment="Top" Height="271" Width="497"/>
     </Grid>
 </Window>
